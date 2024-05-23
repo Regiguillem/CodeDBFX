@@ -1,0 +1,28 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- Configuración de la base de datos -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/codedbmasters</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+
+        <!-- Configuración de Hibernate -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Escaneo de entidades -->
+        <mapping class="com.example.codedbmastersfx.modelo.ExcursionesModelo"/>
+        <mapping class="com.example.codedbmastersfx.modelo.FacturaModelo"/>
+        <mapping class="com.example.codedbmastersfx.modelo.FederacionesModelo"/>
+        <mapping class="com.example.codedbmastersfx.modelo.InscripcionesModelo"/>
+        <mapping class="com.example.codedbmastersfx.modelo.SeguroModelo"/>
+        <mapping class="com.example.codedbmastersfx.modelo.SocioEstandarModelo"/>
+        <mapping class="com.example.codedbmastersfx.modelo.SocioInfantilModelo"/>
+        <mapping class="com.example.codedbmastersfx.modelo.SociosFederadosModelo"/>
+        <mapping class="com.example.codedbmastersfx.modelo.SociosModelo"/>
+    </session-factory>
+</hibernate-configuration>

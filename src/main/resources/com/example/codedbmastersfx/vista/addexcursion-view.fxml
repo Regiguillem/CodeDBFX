@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.codedbmastersfx.controlador.ExcursionesController">
+    <Label text="Añadir Excursión"/>
+    <Label text="Código:"/>
+    <TextField fx:id="codigoField"/>
+    <Label text="Descripción:"/>
+    <TextField fx:id="descripcionField"/>
+    <Label text="Fecha (YYYY-MM-DD):"/>
+    <TextField fx:id="fechaField"/>
+    <Label text="Número de días:"/>
+    <TextField fx:id="nDiasField"/>
+    <Label text="Precio de la excursión:"/>
+    <TextField fx:id="precioField"/>
+    <Button text="Guardar" onAction="#guardarExcursion"/>
+    <Button text="Volver" onAction="#onVolverClick"/>
+</VBox>
